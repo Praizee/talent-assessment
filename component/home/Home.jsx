@@ -110,7 +110,7 @@ const Home = () => {
             <div className="md:flex items-center gap-x-3 sm:text-sm">
               <Link
                 href="/"
-                className="flex items-center justify-center gap-x-1 py-4 px-7 text-white text-lg font-medium bg-[#175CD3]/90 duration-150 hover:bg-[#175CD3] active:bg-gray-900 rounded-full md:inline-flex"
+                className="flex items-center justify-center gap-x-1 py-4 px-7 text-white text-lg font-medium bg-[#175CD3]/90 duration-150 hover:bg-[#175CD3] active:bg-[#5473ac] rounded-full md:inline-flex"
               >
                 Start your free trial
               </Link>
