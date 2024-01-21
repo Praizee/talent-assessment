@@ -29,6 +29,7 @@ import Audio from "/assets/svg/recording-01.svg";
 import Calendar from "/assets/svg/calendar.svg";
 import Security from "/assets/svg/lock-unlocked-04.svg";
 import Collage from "/assets/png/image-group.png";
+import Mockup from "/assets/png//screen mockup.png";
 
 const Home = () => {
   const featuresData = [
@@ -198,6 +199,20 @@ const Home = () => {
           {/* Collage */}
           <div className="md:flex-none hidden lg:block">
             <Image src={Collage} />
+          </div>
+        </div>
+      </div>
+
+      {/* CTA section */}
+      <div className=" max-w-screen-xl mx-auto px-4 md:px-8 lg:px-4 py-24 space-y-20">
+        <div className="flex justify-between gap-8">
+          <div className="flex-1">
+            <h2 className="text-[#101828] text-5xl font-semibold">
+              Ready to clear the path to perfect communication?
+            </h2>
+          </div>
+          <div className="flex-none hidden lg:block">
+            <Image src={Mockup} className="w-max" />
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ const Nav = () => {
           className="md:w-6 w-5"
         />
         <p className="py-2 text-[#101828] text-base md:text-2xl font-semibold">
-          ClearLink.
+          ClearLink<span className="text-[#528BFF]">.</span>
         </p>
       </a>
       <div className="md:hidden">
