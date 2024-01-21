@@ -180,7 +180,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="md:flex justify-between gap-16 text-[#475467]">
+        <div className="lg:flex justify-between gap-16 text-[#475467]">
           {/* grid */}
           <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8">
             {featuresData.map((feature, index) => (
@@ -196,7 +196,7 @@ const Home = () => {
             ))}
           </div>
           {/* Collage */}
-          <div className="md:flex-none hidden md:block">
+          <div className="md:flex-none hidden lg:block">
             <Image src={Collage} />
           </div>
         </div>
