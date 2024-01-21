@@ -12,9 +12,9 @@ const Nav = () => {
   const [state, setState] = useState(false);
 
   const navigation = [
-    { title: "Products", path: "/" },
-    { title: "Solutions", path: "/" },
-    { title: "Resources", path: "/" },
+    { title: "Products", path: "/", options: ["Option 1", "Option 2"] },
+    { title: "Solutions", path: "/", options: ["Option A", "Option B"] },
+    { title: "Resources", path: "/", options: ["Option X", "Option Y"] },
     { title: "Pricing", path: "/" },
   ];
 
@@ -99,18 +99,69 @@ const Nav = () => {
           >
             <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
               {navigation.map((item, idx) => {
+                const isLastItem = idx === navigation.length - 1;
+
                 return (
                   <li
                     key={idx}
                     className="text-[#667085] hover:text-[#444a58] text-lg"
                   >
-                    <a href={item.path} className="block">
-                      {item.title}
-                    </a>
+                    {!isLastItem ? (
+                      <div className="relative">
+                        <button
+                          className="flex items-center focus:outline-none"
+                          onClick={() => {
+                            const dropdown = document.getElementById(
+                              `dropdown-${idx}`
+                            );
+                            dropdown.classList.toggle("hidden");
+                          }}
+                        >
+                          <span>{item.title}</span>
+                          <svg
+                            className="w-2.5 h-2.5 ms-3"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 10 6"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m1 1 4 4 4-4"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id={`dropdown-${idx}`}
+                          className="hidden z-10 absolute text-gray-700 bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                        >
+                          <ul className="py-2 text-sm text-gray-700">
+                            {item.options.map((option, optionIdx) => (
+                              <li key={optionIdx}>
+                                <a
+                                  href={item.path} // Update to link to the corresponding path
+                                  className="block px-4 py-2 hover:bg-gray-100"
+                                >
+                                  {option}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    ) : (
+                      <a href={item.path} className="block">
+                        {item.title}
+                      </a>
+                    )}
                   </li>
                 );
               })}
             </ul>
+
             <div className="items-center justify-end mt-6 space-y-6 md:flex md:mt-0">
               <div className="flex gap-2">
                 <Link
