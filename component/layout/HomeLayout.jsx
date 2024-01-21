@@ -5,9 +5,9 @@ import Home from "../home/Home";
 
 const HomeLayout = () => {
   return (
-    <main className="md:mx-auto flex flex-col py-4 bg-hero-bg md:container w-full relative">
-      <Nav />
-      <div className="bg-transparent h- border-2">
+    <main className="flex flex-col py-4 containe w-full relative">
+      <div className="bg-transparent bg-hero-bg">
+        <Nav />
         <Home />
       </div>
     </main>
