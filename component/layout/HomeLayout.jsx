@@ -2,6 +2,7 @@
 import React from "react";
 import Nav from "./Nav";
 import Home from "../home/Home";
+import Footer from "./Footer";
 
 const HomeLayout = () => {
   return (
@@ -10,6 +11,7 @@ const HomeLayout = () => {
         <Nav />
         <Home />
       </div>
+      <Footer />
     </main>
   );
 };
