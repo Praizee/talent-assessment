@@ -26,20 +26,20 @@ const Nav = () => {
   }, []);
 
   const Brand = () => (
-    <div className="flex items-center justify-between py-5 md:block">
+    <div className="flex items-center justify-between py-5 lg:block">
       <a href="/" className="flex gap-2">
         <Image
           src={Logo}
           width={30}
           height={30}
           alt="Float UI logo"
-          className="md:w-6 w-5"
+          className="lg:w-6 w-5"
         />
-        <p className="py-2 text-[#101828] text-base md:text-2xl font-semibold">
+        <p className="py-2 text-[#101828] text-base lg:text-2xl font-semibold">
           ClearLink<span className="text-[#528BFF]">.</span>
         </p>
       </a>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <button
           className="menu-btn text-gray-500 hover:text-gray-800"
           onClick={() => setState(!state)}
@@ -80,24 +80,24 @@ const Nav = () => {
 
   return (
     <header>
-      <div className={`md:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
+      <div className={`lg:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
         <Brand />
       </div>
       <nav
-        className={`pb-5 md:text-sm ${
+        className={`pb-5 lg:text-sm ${
           state
-            ? "absolute top-0 inset-x-0 z-50 bg-[#F2F4F7] shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-0 md:mt-0 md:relative md:bg-transparent"
+            ? "absolute top-0 inset-x-0 z-50 bg-[#F2F4F7] shadow-lg rounded-xl border mx-2 mt-2 lg:shadow-none lg:border-none lg:mx-0 lg:mt-0 lg:relative lg:bg-transparent"
             : ""
         }`}
       >
-        <div className="gap-x-14 md:rounded-full bg-[#F2F4F7] text-white mb:border border-[#D0D5DD] items-center max-w-screen-xl mx-auto px-4 py-0 md:flex md:px-8">
+        <div className="gap-x-14 lg:rounded-full bg-[#F2F4F7] text-white mb:border border-[#D0D5DD] items-center max-w-screen-xl mx-auto px-4 py-0 lg:flex lg:px-8">
           <Brand />
           <div
-            className={`flex-1 items-center mt-8 md:mt-0 md:flex ${
+            className={`flex-1 items-center mt-8 lg:mt-0 lg:flex ${
               state ? "block" : "hidden"
             } `}
           >
-            <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+            <ul className="flex-1 justify-center items-center space-y-6 lg:flex lg:space-x-6 lg:space-y-0">
               {navigation.map((item, idx) => {
                 const isLastItem = idx === navigation.length - 1;
 
@@ -162,17 +162,17 @@ const Nav = () => {
               })}
             </ul>
 
-            <div className="items-center justify-end mt-6 space-y-6 md:flex md:mt-0">
+            <div className="items-center justify-end mt-6 space-y-6 lg:flex lg:mt-0">
               <div className="flex gap-2">
                 <Link
                   href="/"
-                  className="flex items-center justify-center gap-x-1 py-3 px-6 text-base text-[#101828] font-medium bg-white border border-[#98A2B3] active:bg-white rounded-full md:inline-flex"
+                  className="flex items-center justify-center gap-x-1 py-3 px-6 text-base text-[#101828] font-medium bg-white border border-[#98A2B3] active:bg-white rounded-full lg:inline-flex"
                 >
                   Talk to sales
                 </Link>
                 <Link
                   href="/"
-                  className="flex items-center justify-center gap-x-1 py-3 px-6 text-base text-white font-medium bg-[#175CD3]/90 hover:[#175CD3] active:bg-[#175CD3] rounded-full md:inline-flex"
+                  className="flex items-center justify-center gap-x-1 py-3 px-6 text-base text-white font-medium bg-[#175CD3]/90 hover:[#175CD3] active:bg-[#175CD3] rounded-full lg:inline-flex"
                 >
                   Sign up for free
                 </Link>

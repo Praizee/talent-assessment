@@ -114,7 +114,7 @@ const Footer = () => {
 
   return (
     <footer className="pt-10">
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600">
+      <div className="max-w-screen-xl bottom-0 mx-auto px-4 text-gray-600">
         <div className="justify-between lg:flex">
           <div className="space-y-6">
             <Link href="/" className="flex gap-2">
@@ -129,14 +129,14 @@ const Footer = () => {
                 ClearLink<span className="text-[#528BFF]">.</span>
               </p>
             </Link>
-            <p className="max-w-sm text-[#475467] text-lg font-normal">
+            <p className="lg:max-w-sm max-w-xl text-[#475467] text-lg font-normal">
               ClearLink is your gateway to effortless, high-quality video
               conferencing. Join us in shaping the future of communication!
             </p>
           </div>
 
           {/* links */}
-          <div className="flex-none mt-16 space-y-6 justify-between gap-20 sm:flex md:space-y-0 text-[#475467] text-lg font-semibold">
+          <div className="flex-none mt-16 justify-between md:gap-20 gap-10  grid grid-cols-2 md:grid-cols-4  space-y-0 text-[#475467] text-lg font-semibold">
             {footerNavs.map((item, idx) => (
               <ul className="space-y-4 " key={idx}>
                 <h4 className="text-[#667085] text-base font-semibold sm:pb-2">
@@ -173,9 +173,9 @@ const Footer = () => {
       </div>
 
       {/* copyright */}
-      <div className="mt-10 py-10 px-40 bg-[#F9FAFB] text-[#667085] items-center justify-between sm:flex">
+      <div className="mt-10 py-10 px-4 md:px-40 bg-[#F9FAFB] text-[#667085] items-center justify-between sm:flex">
         <p>© {currentYear} ClearLink. All rights reserved.</p>
-        <div className="flex items-center gap-x-6 text-gray-400 mt-6">
+        <div className="flex items-center gap-x-6 text-gray-400">
           {/* className="w-6 h-6 hover:text-gray-500 duration-150" */}
           <Link href="#">
             <svg

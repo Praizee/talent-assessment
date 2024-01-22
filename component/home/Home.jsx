@@ -98,12 +98,12 @@ const Home = () => {
     <section>
       {/* hero */}
       <div className="relative">
-        <div className="max-w-screen-xl mx-auto px-4 py-24 gap-12 text-gray-600 overflow-hidden md:px-8 lg:flex justify-between">
+        <div className="max-w-screen-xl mx-auto px-4 md:py-24 pb-8 pt-4 gap-12 text-gray-600 overflow-hidden md:px-8 lg:flex justify-between">
           <div className="flex-1 space-y-8 max-w-max">
-            <h1 className="text-4xl text-[#1D2939] font-semibold sm:text-7xl">
+            <h1 className="text-4xl text-[#1D2939] font-semibold md:text-5xl lg:text-7xl">
               Uniting the world, one video call at a time
             </h1>
-            <p className="text-[#667085] max-w-lg">
+            <p className="text-[#667085] lg:max-w-lg">
               Experience the future of communication with ClearLink – where
               crystal-clear video conferencing meets unparalleled simplicity.
             </p>
@@ -138,25 +138,25 @@ const Home = () => {
           </div>
 
           {/* images */}
-          <div className="flex-none hidden md:block md:mt-10 lg:mt-0">
+          <div className="flex-none md:block mt-10 lg:mt-0">
             <div className="max-w-max bg-[#EFF8FF] rounded-3xl p-8 border border-[#B2DDFF] shadow-2xl ">
               <div className="grid gap-10 grid-cols-3">
-                <span className="bg-[#FF9C66] w-max rounded-xl">
+                <span className="bg-[#FF9C66] md:md:w-max rounded-xl">
                   <Image src={Image1} width={100} height={100} alt="Image" />
                 </span>
-                <span className="bg-[#D6BBFB] w-max rounded-xl">
+                <span className="bg-[#D6BBFB] md:w-max rounded-xl">
                   <Image src={Image2} width={100} height={100} alt="Image" />
                 </span>
-                <span className="bg-[#ACDC79] w-max rounded-xl">
+                <span className="bg-[#ACDC79] md:w-max rounded-xl">
                   <Image src={Image3} width={100} height={100} alt="Image" />
                 </span>
-                <span className="bg-[#B3B8DB] w-max rounded-xl">
+                <span className="bg-[#B3B8DB] md:w-max rounded-xl">
                   <Image src={Image4} width={100} height={100} alt="Image" />
                 </span>
-                <span className="bg-[#FEC84B] w-max rounded-xl">
+                <span className="bg-[#FEC84B] md:w-max rounded-xl">
                   <Image src={Image5} width={100} height={100} alt="Image" />
                 </span>
-                <span className="bg-[#FEA3B4] w-max rounded-xl">
+                <span className="bg-[#FEA3B4] md:w-max rounded-xl">
                   <Image src={Image6} width={100} height={100} alt="Image" />
                 </span>
               </div>
@@ -247,7 +247,7 @@ const Home = () => {
             </h2>
           </div>
           <div className="flex-none hidden lg:block">
-            <Image src={Mockup} className="w-max" />
+            <Image src={Mockup} className="md:w-max" />
           </div>
         </div>
       </div> */}

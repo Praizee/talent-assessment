@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const HomeLayout = () => {
   return (
-    <main className="flex flex-col py-4 containe w-full relative">
+    <main className="flex flex-col pt-4 containe w-full relative">
       <div className="bg-transparent bg-hero-bg">
         <Nav />
         <Home />
