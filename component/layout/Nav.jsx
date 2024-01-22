@@ -141,12 +141,12 @@ const Nav = () => {
                           <ul className="py-2 text-sm text-gray-700">
                             {item.options.map((option, optionIdx) => (
                               <li key={optionIdx}>
-                                <a
+                                <Link
                                   href={item.path} // Update to link to the corresponding path
                                   className="block px-4 py-2 hover:bg-gray-100"
                                 >
                                   {option}
-                                </a>
+                                </Link>
                               </li>
                             ))}
                           </ul>
