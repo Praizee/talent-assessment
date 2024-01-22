@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* Disable right-clicking */
+  /* user-drag: none; */
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Made with 💙 by Stephen Adeniji
+https://stephen-adeniji.vercel.app/*/
