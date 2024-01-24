@@ -17,3 +17,6 @@ module.exports = {
   },
   plugins: [require("daisyui")],
 };
+
+/* Made with 💙 by Stephen Adeniji
+https://stephen-adeniji.vercel.app/*/
