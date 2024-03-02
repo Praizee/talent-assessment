@@ -123,7 +123,7 @@ const Home = () => {
               </Link>
             </div>
 
-            <div className="flex gap-4">
+            <div className="md:flex gap-4 space-y-3 md:space-y-0">
               <Image src={AvatarGroup} alt="avatar group" />
               <span>
                 <span className="flex gap-2">
